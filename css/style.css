@@ -1,0 +1,27 @@
+/* Header */
+header {
+    display: flex;
+	justify-content: space-between;
+}
+ #logo-header {
+    width: 130px;
+    margin: 20px 30px;
+ }
+ nav {     
+    display: flex;
+    align-items: center;    
+    font-size: 16px;
+ }
+ nav ul {
+	display: flex;
+}
+nav li {
+    width: 100px;
+    margin: 0;
+    padding: 40px 30px;
+
+}
+#nav-clicked {
+    color: #0065FC;
+    border-top:  3px solid blue;
+}
