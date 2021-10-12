@@ -1,3 +1,28 @@
+/* body */
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: Raleway, Helvetica, sans-serif;
+    box-sizing: content-box;
+    max-width: 1438px;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 25px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 20px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
 /* Header */
 header {
     display: flex;
@@ -16,12 +41,104 @@ header {
 	display: flex;
 }
 nav li {
-    width: 100px;
+    width: auto;
     margin: 0;
     padding: 40px 30px;
-
+    border-top:  3px solid rgba(0, 0, 255, 0);
+    box-sizing: border-box;
 }
-#nav-clicked {
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main */
+main {
+    margin: 0 5px;
+}
+    /** Main form search **/
+.form-search{
+    display: flex;
+    margin: 15px 0;
+    height: 40px;
+    width: 400px;
+    border: 1px solid #F2F2F2;
+    border-radius: 10px;
+}
+.main-search {
+    display: flex;
+    justify-content: space-between;
+    border: #F2F2F2;
+}
+.main-form-logo {
+    padding: 20px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px 0px 0px 10px;
+}
+main form input {
+    font-size: 20px;
+    padding: 10px 5px;
+    border: none;
+}
+.main-form-search {
+    font-size: 25px;
+    background-color: #0065FC;
+    padding: auto 10px;
+}
+.main-form-research {
+    background-color: #0065FC;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 0 15px;
+    border-radius: 0px 10px 10px 0px;
+}
+.main-logo-info {
+    background-color: #0065FC;
+    border-radius: 50px;
+    color: #ffffff;
+    border: 1px solid lightgray;
+}
+
+/* filtre */
+.section-filtre {
+    display: flex;
+    margin: 30px 0;
+}
+.section-filtre h2 {
+    margin-right: 25px;
+}
+.button-filtre {
+    display: flex;
+}
+.form-filtre {
+display: flex;
+justify-content: center;
+align-items: baseline;
+margin: 0 25px;
+border: 2px solid lightgray;
+border-radius: 40px;
+}
+.logo-filtre {
     color: #0065FC;
-    border-top:  3px solid blue;
+    padding: 15px;
+    border-radius: 50%;
+    background-color: #deebff;
+    /* scale: 2; */
+}
+.p-filtre {
+    padding: 0 20px;
+    font-weight: 700;
+}
+
+
+/* Media queries */
+@media (hover: hover) {
+    nav li:hover {
+        color: #0065FC;
+        border-top:  3px solid blue;
+    }
 }

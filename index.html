@@ -7,12 +7,14 @@
 
     <!-- styles CSS -->
     <link rel="stylesheet" href="./css/reset.css">
+    <script src="https://kit.fontawesome.com/f96e659b30.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/style.css">
-
+    
     <!-- font -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
-
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- title -->
     <title>Booki</title>
 </head>
@@ -23,16 +25,68 @@
         <img id="logo-header" src="./images/logo/Booki.png" alt="logo booki">        
         <nav>
             <ul>
-                <li id="nav-clicked">Hébergements</li>
-                <li>Activités</li>
+                <li> <a href="#"> Hébergements</a></li>
+                <li><a href="#"> Activités</a></li>
             </ul> 
         </nav>        
     </header>
 
     <!-- main -->
-        <!-- reserch -->
-        <!-- housing -->
-        <!-- activities -->
+    <main>
+        <section class="section-search">
+            <div>
+                <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+                <p>En plein centre ville ou en pleine nature</p>
+            </div>
+
+            <!-- section-reserch -->
+            <div>
+                <form action="" method="post" class="form-search">
+                    <div  class="main-search">
+                        <i class="fas fa-map-marker-alt main-form-logo"></i>
+                        <input type="text" name="town" placeholder="Marseille, France">
+                        <input type="submit" value="Rechercher" class="main-form-research">
+                    </div>
+                </form>
+            </div>        
+
+            <!-- filtre -->
+            <div class="section-filtre">
+                <h2>Filtres</h2>
+                <div class="button-filtre">
+                    <form action="" method="post" class="form-filtre">
+                        <i class="fas fa-money-bill-wave logo-filtre"></i>
+                        <p class="p-filtre">Econimique</p>
+                    </form>
+                    <form action="" method="post" class="form-filtre">
+                        <i class="fas fa-child logo-filtre"></i>
+                        <p class="p-filtre">Familiale</p>
+                    </form>
+                    <form action="" method="post" class="form-filtre">
+                        <i class="fas fa-heart logo-filtre"></i>
+                        <p class="p-filtre">Romantique</p>
+                    </form>
+                    <form action="" method="post" class="form-filtre">
+                        <i class="fas fa-dog logo-filtre"></i>
+                        <p class="p-filtre">Animaux autorisés</p>
+                    </form>
+                </div>
+            </div>
+
+            <!-- info -->        
+            <i class="fas fa-info-circle main-logo-info"></i><cite>Plus de 500 logements sont disponibles dans cette ville</cite>
+            
+            <!-- section-housing -->
+            
+            <!-- section-activities -->
+
+        </section>
+
+    </main>
+
     <!-- footer -->
+    <footer>
+
+    </footer>
 </body>
 </html>
