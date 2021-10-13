@@ -135,11 +135,11 @@ border-radius: 40px;
 }
 .logo-filtre {
     color: #0065FC;
-    padding: 15px;
+    padding: 13px;
     border-radius: 50%;
     background-color: #deebff;
     position: absolute;
-    left: -18px;
+    left: -10px;
     top: -2px;
     /* scale: 2; */
 }
