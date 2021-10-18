@@ -163,10 +163,6 @@ border-radius: 40px;
     /* height: 50px; */
 }
 
-section, footer {
-    border: 2px solid red;
-}
-
                                 /* Housing Marseille */
 .section-housing {
     display: flex;    
@@ -339,6 +335,24 @@ figcaption {
     margin: 15px 10px;
 }
 
+                /* footer */
+footer {
+    display: flex;
+    background-color: #F2F2F2;
+}
+.footer {
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    line-height: 150%;
+    font-weight: 500;
+    margin-top: 10px;
+}
 
 
                                 /* Media queries */
