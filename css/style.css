@@ -1,4 +1,4 @@
-/* body */
+                                /* body */
 * {
     box-sizing: border-box;
 }
@@ -18,12 +18,16 @@ h2 {
     font-weight: 800;
     margin: 10px 0;
 }
+h3 {
+    font-size: 16px;
+    font-weight: 800;
+}
 p {
     margin: 10px 0;
     font-size: 18px;
 }
 
-/* Header */
+                                /* Header */
 header {
     display: flex;
 	justify-content: space-between;
@@ -52,10 +56,11 @@ nav a {
     color: black;
 }
 
-/* Main */
+                                /* Main */
 main, footer {
     margin: 0 5px;
 }
+
 
     /** Main form search **/
 .section-search {
@@ -120,7 +125,7 @@ main form input {
 cite {
     margin-left: 10px;
 }
-/* filtre */
+                                /* filtre */
 .section-filtre {
     display: flex;
     margin: 30px 0;
@@ -162,22 +167,46 @@ section, footer {
     border: 2px solid red;
 }
 
-/* Housing section */
-.housing-cards {
+                                /* Housing Marseille */
+.section-housing {
+    display: flex;    
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.housing-marseille {
     background-color: #F2F2F2;
-    border-radius: 50px;
-    width: 70%;
+    border-radius: 30px;
+    width: 68%;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 25px 20px;
+}
+.housing-cards {
+    display: flex;
+    flex-wrap: wrap;
 }
 .housind--card {
     background-color: #fff;
-    height: 100%;
-    width: 300px;
+    height: 220px;
+    width: 278px;
     border-radius: 20px;
     box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
-    padding: 8px;
+    padding: 5px;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+.housind--card:hover {
+    transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.housind--card--img {
+    /* height: 300px; */
 }
 .housind--card img {
     width: 100%;
+    height: 120px;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
     margin-bottom: 5px;
@@ -188,9 +217,131 @@ section, footer {
 .fa-star.none {
     color: lightgray;
 }
+.fa-star, .fa-star.none {
+    font-size: 12px;
+}
+.housing-marseille a {
+    margin: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+                            /* cards all of housing section */
+.housing--card--description, .mpopular--card--description {
+    margin: 0 10px;
+}
+.housing--card--description p, .mpopular--card--description p {
+    font-size: 15px;
+}
+                                /* most-popular */
+.most-popular{
+    background-color: #F2F2F2;
+    border-radius: 30px;
+    width: 28%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 20px;    
+}
+.mpopular-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.mpopular-title i {
+    font-size: 20px;
+}
+.mpopular-cards {
+    display: flex;
+    flex-direction: column;
+}
+.mpopular--card {
+    background-color: #fff;
+    height: 150px;
+    width: 320px;
+    border-radius: 20px;
+    box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 5px;
+    margin: 15px;
+    display: flex;
+    flex-direction: row;
+}
+.mpopular--card img {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 20px 0 0 20px;
+}
+.mpopular--card--description {
+    margin: 12px 0 0 15px;
+    /* display: flex;
+    flex-direction: column; */
+}
+.mpopular--card .fa-star, .mpopular--card .fa-star.none {
+    position: relative;
+    bottom: -40px;
+}
+
+                            /* Activity section */
+.activity-section {
+    display: flex;
+    flex-direction: column;
+}
+.activity--cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+.activity--card {
+    border-radius: 20px;
+    height: auto;
+    width: 300px;
+    margin: 25px;
+    overflow: hidden;
+}
+.card--Limage {
+    position: relative;
+    height: 88%;
+}
+.activity--Lcard img {
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    position: absolute;
+}
+.activity--card--duo {
+    margin: 25px;
+}
+.activity--Mcard {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.mini--card {
+    margin-bottom: 20px;
+}
+.card--Mimage {
+    position: relative;
+    height: 75%;
+}
+.activity--Mcard img {    
+    height: 100%;
+    width: 100%;    
+    object-fit: cover;
+    position: absolute;
+}
+.activity--Lcard, .activity--Mcard {
+    box-shadow:  0 4px 10px 0 rgba(0,0,0,0.2);
+}
+figcaption {
+    font-weight: 700;
+    margin: 15px 10px;
+}
 
 
-/* Media queries */
+
+                                /* Media queries */
 @media (hover: hover) {
     nav li:hover {
         color: #0065FC;
