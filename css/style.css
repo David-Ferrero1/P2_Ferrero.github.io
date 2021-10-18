@@ -187,11 +187,11 @@ border-radius: 40px;
 .housind--card {
     background-color: #fff;
     height: 220px;
-    width: 278px;
+    width: 28%;
     border-radius: 20px;
     box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 5px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     margin: 15px;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
@@ -249,9 +249,10 @@ border-radius: 40px;
     flex-direction: column;
 }
 .mpopular--card {
+    position: relative;
     background-color: #fff;
     height: 150px;
-    width: 320px;
+    width: 90%;
     border-radius: 20px;
     box-shadow:  0 4px 8px 0 rgba(0,0,0,0.2);
     padding: 5px;
@@ -271,9 +272,9 @@ border-radius: 40px;
     /* display: flex;
     flex-direction: column; */
 }
-.mpopular--card .fa-star, .mpopular--card .fa-star.none {
-    position: relative;
-    bottom: -40px;
+.mpopular--stars {
+    position: absolute;
+    bottom: 10px;
 }
 
                             /* Activity section */
@@ -371,7 +372,31 @@ footer a {
 }
 
 /* Responsive */
-@media all and (max-width: 780px)
+@media all and (max-width: 992px)
+{
+    header nav {
+        font-size: 30px;
+    }
+    .section-filtre {
+        flex-wrap: wrap;
+    }
+    .section-housing {
+        flex-direction: column-reverse;
+    }
+    .most-popular {
+        margin-bottom: 30px;
+    }
+    .most-popular, .housing-marseille {
+        width: auto;
+    }
+    .mpopular-cards {
+        flex-direction: row;
+    }
+    .activity--cards {
+        justify-content: center;
+    }
+}
+@media all and (max-width: 768px)
 {
     .section-filtre {
         flex-wrap: wrap;
