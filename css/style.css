@@ -32,16 +32,16 @@ header {
     display: flex;
 	justify-content: space-between;
 }
- #logo-header {
+#logo-header {
     width: 130px;
     margin: 20px 30px;
  }
- nav {     
+nav {     
     display: flex;
     align-items: center;    
     font-size: 16px;
- }
- nav ul {
+}
+nav ul {
 	display: flex;
 }
 nav li {
@@ -56,13 +56,13 @@ nav a {
     color: black;
 }
 
-                                /* Main */
+                                            /* Main */
 main, footer {
     margin: 0 5px;
 }
 
 
-    /** Main form search **/
+                                             /** Main form search **/
 .section-search {
     display: flex;
     flex-direction: column;
@@ -72,9 +72,10 @@ main, footer {
     display: flex;
     margin: 15px 0;
     height: 50px;
-    width: 400px;
+    width: 430px;
     border: 1px solid #F2F2F2;
     border-radius: 10px;
+    overflow: hidden;
 }
 .main-search {
     display: flex;
@@ -87,30 +88,36 @@ main, footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 10px 0px 0px 10px;
 }
 main form input {
     font-size: 20px;
-    padding: 10px 5px;
     border: none;
 }
-/* .main-form-search {
-    font-size: 35px;
-    background-color: #0065FC;
-    padding: 20px;
-} */
-.main-form-research {
+.main-town {
+    margin: auto 0 auto 15px;
+}
+.main-research {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+}
+.main-research--form {
     background-color: #0065FC;
     color: white;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
-    padding: 0 15px;
-    border-radius: 0px 10px 10px 0px;
+    padding: 17px 20px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
 .section-search-info {
     display: flex;
     /* justify-content: baseline; */
     align-items: baseline;
+}
+.fa-search {
+    display: none;
 }
 .fa-info {
     color: #0065FC;
@@ -184,7 +191,7 @@ border-radius: 40px;
     display: flex;
     flex-wrap: wrap;
 }
-.housind--card {
+.housing--card {
     background-color: #fff;
     height: 220px;
     width: 28%;
@@ -196,7 +203,7 @@ border-radius: 40px;
     transition: 0.3s;
     transition-timing-function: ease-in-out;
 }
-.housind--card img {
+.housing--card img {
     width: 100%;
     height: 120px;
     object-fit: cover;
@@ -356,7 +363,7 @@ footer a {
 }
 
                                 /* transition */
-.housind--card:hover, .mpopular--card:hover, .activity--Lcard:hover, .activity--Mcard:hover {
+.housing--card:hover, .mpopular--card:hover, .activity--Lcard:hover, .activity--Mcard:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
                             
@@ -398,7 +405,68 @@ footer a {
 }
 @media all and (max-width: 768px)
 {
-    .section-filtre {
-        flex-wrap: wrap;
+    header {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
     }
+    nav {
+        width: auto;
+    }
+    nav li {
+        border-bottom: 3px solid lightgray;
+    }
+    nav li:hover {
+        color: #0065FC;
+        border-top: none;
+        border-bottom:  3px solid blue;
+    }
+    .main-search {
+        height: 50px;
+    }
+    .form-search {
+        /* width: auto; */
+    }
+    .main-research--form {
+        display: none;
+    }
+                                        /*** je n'arrive pas à le bouger ***/
+    .main-fa-search {
+       
+    }
+    .fa-search {
+        display: block;
+        font-size: 25px;
+        color: white;
+        padding: 12px;
+        background-color: #0065FC;
+    }
+    .form-filtre {
+        margin: 10px;
+    }
+    .section-housing {
+        margin-bottom: 10px;
+    }
+    .mpopular-cards {
+        flex-direction: column;
+    }
+    .housing-marseille {
+        background-color: white;
+    }
+    .housing--card {
+        width: 90%;
+    }
+    .activity--card {
+        height: 200px;
+    }
+    .card--Limage {
+        height: 73%;
+    }
+    footer {
+        flex-direction: column;
+    }
+    .footer {
+        width: auto;
+    }
+
 }
