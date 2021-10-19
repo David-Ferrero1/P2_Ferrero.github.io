@@ -115,7 +115,7 @@ main form input {
     color: white;
     font-weight: 700;
     font-size: 14px;
-    padding: 17px 20px;
+    padding: 15px 20px;
     justify-content: center;
     align-content: center;
     align-items: center;
@@ -466,8 +466,9 @@ footer a {
     .main-research--form {
         display: none;
     }
-                                /*! je n'arrive pas à le bouger */
+    /*************! je n'arrive pas à le bouger *************/
     .main-fa-search {
+        right: 0;
     }
     .fa-search {
         display: block;

@@ -11,10 +11,8 @@
 
 - position de la barre de recherche
 - position de la nav en responsive
-- cursor pointer sur rechercher
 - trouver la bonne taille de la font
 - problème au niveau sémantique
 - pourquoi sur git page, les images ne s'affichent pas?
-- dimension des cards dans activité non ok
 
 ## A faire
