@@ -403,7 +403,7 @@ footer a {
         color: #0065FC;
         border-top:  3px solid blue;
     }
-    .main-form-research:hover, .form-filtre {
+    .main-research, .form-filtre {
         cursor: pointer;
     }
 }
@@ -418,6 +418,9 @@ footer a {
     }
     .section-filtre {
         flex-wrap: wrap;
+    }
+    .form-filtre {
+        margin: 10px;
     }
     .section-housing {
         flex-direction: column-reverse;
@@ -462,7 +465,7 @@ footer a {
     .main-research--form {
         display: none;
     }
-                                        /*** je n'arrive pas à le bouger ***/
+                                /*! je n'arrive pas à le bouger */
     .main-fa-search {
     }
     .fa-search {
@@ -471,9 +474,6 @@ footer a {
         color: white;
         padding: 12px;
         background-color: #0065FC;
-    }
-    .form-filtre {
-        margin: 10px;
     }
     .section-housing {
         margin-bottom: 10px;
@@ -493,8 +493,12 @@ footer a {
     .card--Limage {
         height: 73%;
     }
+    .activity--card--duo {
+        margin: 0;
+    }
     footer {
         flex-direction: column;
+        margin-top: 25px;
     }
     .footer {
         width: auto;
