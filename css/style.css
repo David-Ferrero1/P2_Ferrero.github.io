@@ -108,6 +108,7 @@ main form input {
     overflow: hidden;
     display: flex;
     position: relative;
+    cursor: pointer;
 }
 .main-research--form {
     background-color: #0065FC;
@@ -403,7 +404,7 @@ footer a {
         color: #0065FC;
         border-top:  3px solid blue;
     }
-    .main-research, .form-filtre {
+    .main-form-logo, .main-research, .main-research--form, .form-filtre {
         cursor: pointer;
     }
 }
