@@ -187,6 +187,9 @@ border-radius: 40px;
     flex-direction: column;
     padding: 25px 20px;
 }
+.euro {
+    font-weight: bold;
+}
 .housing-cards {
     display: flex;
     flex-wrap: wrap;
