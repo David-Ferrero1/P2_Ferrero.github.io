@@ -4,6 +4,7 @@
 2. Deuxième étape: déterminer les élément HTML
 3. Troisième étape: éditer le code html par bloque
 4. Quatrième étape: éditer le css
+5. Utiliser le BEM (Bloc, Element, Modifier)
 
 ## Problème rencontré
 

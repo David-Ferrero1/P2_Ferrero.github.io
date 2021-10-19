@@ -1,4 +1,6 @@
-                                /* body */
+/* ================================================ */
+/* body */
+/* ================================================ */
 * {
     box-sizing: border-box;
 }
@@ -27,7 +29,9 @@ p {
     font-size: 18px;
 }
 
-                                /* Header */
+/* ================================================ */
+/* Header */
+/* ================================================ */
 header {
     display: flex;
 	justify-content: space-between;
@@ -56,13 +60,17 @@ nav a {
     color: black;
 }
 
-                                            /* Main */
+
+/* ================================================ */
+/* Main */
+/* ================================================ */
 main, footer {
     margin: 0 5px;
 }
 
-
-                                             /** Main form search **/
+/* ================================================ */
+/* Main form search */
+/* ================================================ */
 .section-search {
     display: flex;
     flex-direction: column;
@@ -113,7 +121,6 @@ main form input {
 }
 .section-search-info {
     display: flex;
-    /* justify-content: baseline; */
     align-items: baseline;
 }
 .fa-search {
@@ -133,7 +140,10 @@ main form input {
 cite {
     margin-left: 10px;
 }
-                                /* filtre */
+
+/* ================================================ */
+/* filtre */
+/* ================================================ */
 .section-filtre {
     display: flex;
     margin: 30px 0;
@@ -163,15 +173,15 @@ border-radius: 40px;
     position: absolute;
     left: -10px;
     top: -2px;
-    /* scale: 2; */
 }
 .p-filtre {
     padding: 0 15px 0 40px;
     font-weight: 700;
-    /* height: 50px; */
 }
 
-                                /* Housing Marseille */
+/* ================================================ */
+/* Housing Marseille */
+/* ================================================ */
 .section-housing {
     display: flex;    
     justify-content: space-between;
@@ -229,14 +239,19 @@ border-radius: 40px;
     color: black;
 }
 
-                            /* cards all of housing section */
+/* ================================================ */
+/* cards all of housing sectio */
+/* ================================================ */
 .housing--card--description, .mpopular--card--description {
     margin: 0 10px;
 }
 .housing--card--description p, .mpopular--card--description p {
     font-size: 15px;
 }
-                                /* most-popular */
+
+/* ================================================ */
+/* most-popular */
+/* ================================================ */
 .most-popular{
     background-color: #F2F2F2;
     border-radius: 30px;
@@ -279,15 +294,15 @@ border-radius: 40px;
 }
 .mpopular--card--description {
     margin: 12px 0 0 15px;
-    /* display: flex;
-    flex-direction: column; */
 }
 .mpopular--stars {
     position: absolute;
     bottom: 10px;
 }
 
-                            /* Activity section */
+/* ================================================ */
+/* Activity section */
+/* ================================================ */
 .activity-section {
     display: flex;
     flex-direction: column;
@@ -345,8 +360,16 @@ figcaption {
     font-weight: 700;
     margin: 15px 10px;
 }
+.pomegues {
+    height: 250px;
+}
+.frioul {
+    height: 150px;
+}
 
-                /* footer */
+/* ================================================ */
+/* footer */
+/* ================================================ */
 footer {
     display: flex;
     background-color: #F2F2F2;
@@ -365,12 +388,16 @@ footer a {
     margin-top: 10px;
 }
 
-                                /* transition */
+/* ================================================ */
+/* transition */
+/* ================================================ */
 .housing--card:hover, .mpopular--card:hover, .activity--Lcard:hover, .activity--Mcard:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
 }
-                            
-                                /* Media queries */
+
+/* ================================================ */
+/* media queries */
+/* ================================================ */
 @media (hover: hover) {
     nav li:hover {
         color: #0065FC;
@@ -381,7 +408,9 @@ footer a {
     }
 }
 
-/* Responsive */
+/* ================================================ */
+/* responsive */
+/* ================================================ */
 @media all and (max-width: 992px)
 {
     header nav {
@@ -458,7 +487,7 @@ footer a {
     .housing--card {
         width: 90%;
     }
-    .activity--card {
+    .activity--card, .pomegues, .frioul {
         height: 200px;
     }
     .card--Limage {
