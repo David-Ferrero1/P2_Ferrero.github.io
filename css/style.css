@@ -43,7 +43,7 @@ header {
 nav {     
     display: flex;
     align-items: center;    
-    font-size: 16px;
+    font-size: 20px;
 }
 nav ul {
 	display: flex;
@@ -78,6 +78,7 @@ main, footer {
 }
 .form-search{
     display: flex;
+    justify-content: space-between;
     margin: 15px 0;
     height: 50px;
     width: 430px;
@@ -124,8 +125,9 @@ main form input {
     display: flex;
     align-items: baseline;
 }
-.fa-search {
-    display: none;
+.fa-search:before {
+    content: "Rechercher";
+    font-family: Raleway;
 }
 .fa-info {
     color: #0065FC;
@@ -178,6 +180,15 @@ border-radius: 40px;
 .p-filtre {
     padding: 0 15px 0 40px;
     font-weight: 700;
+}
+.fa-money-bill-wave {
+    padding: 13px 11px;
+}
+.fa-child {
+    padding: 13px 15px;
+}
+.main-research button {
+    border-color: rgba(255, 255, 255, 0);
 }
 
 /* ================================================ */
@@ -414,17 +425,38 @@ footer a {
 /* ================================================ */
 @media all and (max-width: 992px)
 {
+    main, footer {
+        margin: 0;
+    }
+    .section-search {
+        margin: 10px 0 30px 20px;
+    }
     header nav {
         font-size: 30px;
     }
+    .form-search {
+        margin: 20px  auto;
+    }
     .section-filtre {
         flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section-filtre h2 {
+        align-self: center;
     }
     .form-filtre {
         margin: 10px;
     }
+    .most-popular {
+        border-radius: 0;
+    }
+    .housing-marseille {
+        background-color: white;
+        padding: 0 20px;
+    }
     .section-housing {
         flex-direction: column-reverse;
+        margin-bottom: 15px;
     }
     .most-popular {
         margin-bottom: 30px;
@@ -441,32 +473,56 @@ footer a {
 }
 @media all and (max-width: 768px)
 {
+    body {
+        padding: 0;
+    }
+    /* *********************************** */
     header {
         flex-direction: column;
         align-items: center;
         margin-bottom: 30px;
     }
+    #logo-header {
+        margin-right: 0px;
+    }
     nav {
-        width: auto;
+        display: block;
+        width: 100%;
+    }
+    header nav {
+        font-size: 20px;
+        width: 100%;
     }
     nav li {
-        border-bottom: 3px solid lightgray;
+        position: relative;
+        width: 50%;
+        text-align: center;
+        border-top: none;
+        border-bottom: 3px solid #e2e2e2;
+        padding: 20px;
     }
     nav li:hover {
         color: #0065FC;
         border-top: none;
         border-bottom:  3px solid blue;
     }
+    /* *********************************** */
+    .section-search {
+        padding: 0 15px;
+    }
     .main-search {
         height: 50px;
     }
+    .fa-search:before {
+        content: "\f002";
+        font-family: 'Font Awesome 5 Free';
+    }
+    #town {
+        width: 50%;
+    }
     .form-search {
-        /* width: auto; */
+        width: auto;
     }
-    .main-research--form {
-        display: none;
-    }
-    /*************! je n'arrive pas à le bouger *************/
     .main-fa-search {
         right: 0;
     }
@@ -477,27 +533,48 @@ footer a {
         padding: 12px;
         background-color: #0065FC;
     }
-    .section-housing {
-        margin-bottom: 10px;
+    /* *********************************** */
+    .most-popular {
+        border-radius: 0;
     }
     .mpopular-cards {
         flex-direction: column;
     }
-    .housing-marseille {
-        background-color: white;
+    /* *********************************** */
+    .section-housing {
+        margin-bottom: 10px;
     }
     .housing--card {
-        width: 90%;
+        width: 100%;
+        justify-content: center;
+    }
+    /* .housing-marseille a {
+        text-align: center;
+    } */
+    /* *********************************** */
+    .activity-section h2 {
+        margin: 10px 0 30px 30px;
+
     }
     .activity--card, .pomegues, .frioul {
         height: 200px;
+        width: 100%;
+    }
+    .activity--cards {
+        width: 100%;
+        align-items: center;
     }
     .card--Limage {
         height: 73%;
     }
-    .activity--card--duo {
-        margin: 0;
+    .activity--card, .activity--card--duo, .activity--Mcard {
+        width: 100%;
+        /* margin: 0 20px; */
     }
+    .activity--Lcard {
+        margin: 0px 25px;
+    }
+    /* *********************************** */
     footer {
         flex-direction: column;
         margin-top: 25px;
@@ -505,5 +582,11 @@ footer a {
     .footer {
         width: auto;
     }
-
+}
+@media all and (max-width: 332px)
+{
+    nav ul {
+        flex-direction: column;
+        width: auto;
+    }
 }
