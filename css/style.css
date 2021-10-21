@@ -441,6 +441,7 @@ footer a {
     .section-filtre {
         flex-wrap: wrap;
         justify-content: center;
+        margin: 10px 0 30px;
     }
     .section-filtre h2 {
         align-self: center;
@@ -514,8 +515,19 @@ footer a {
     .section-search {
         padding: 0 15px;
     }
+    .section-search h1 {
+        margin-bottom: 20px;
+    }
     .main-search {
         height: 50px;
+    }
+    .main-research {
+        border-radius: 10px;
+    }
+    .section-filtre {
+        flex-wrap: wrap;
+        justify-content: start;
+        margin: 10px 0 30px;
     }
     .fa-search:before {
         content: "\f002";
@@ -556,8 +568,8 @@ footer a {
         justify-content: center;
     }
     /* *********************************** */
-    .activity-section h2 {
-        margin: 10px 0 30px 30px;
+    .activity-section h1 {
+        margin: 10px 0 25px 40px;
 
     }
     .activity--card, .pomegues, .frioul {
