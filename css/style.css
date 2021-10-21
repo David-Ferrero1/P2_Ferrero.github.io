@@ -540,6 +540,9 @@ footer a {
     .mpopular-cards {
         flex-direction: column;
     }
+    .mpopular--card {
+        width: 95%;
+    }
     /* *********************************** */
     .section-housing {
         margin-bottom: 10px;
@@ -572,7 +575,10 @@ footer a {
         /* margin: 0 20px; */
     }
     .activity--Lcard {
-        margin: 0px 25px;
+        margin: 0px 35px;
+    }
+    .activity--card--duo {
+        margin: 25px 35px;
     }
     /* *********************************** */
     footer {
