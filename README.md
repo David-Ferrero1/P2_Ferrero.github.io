@@ -6,8 +6,12 @@
 4. Quatrième étape: éditer le css
 5. Utiliser le BEM (Bloc, Element, Modifier)
 6. Utilisation du reset de **Eric Meyer**
-7. Sémantique pour les cards: choix de div à la place de li pour la maquette
+7. Sémantique:
+    - utilisation sémantique moderne
+    - pour les cards: choix de div à la place de li pour la maquette
 8. vérif du code sur Chromium et firefox
+9. Appris des raccourcies clavier utiles
+10. Utilisation kebab case pour les div et les class
 
 ## Problème rencontré
 
