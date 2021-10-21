@@ -7,6 +7,7 @@
 5. Utiliser le BEM (Bloc, Element, Modifier)
 6. Utilisation du reset de **Eric Meyer**
 7. Sémantique pour les cards: choix de div à la place de li pour la maquette
+8. vérif du code sur Chromium et firefox
 
 ## Problème rencontré
 
