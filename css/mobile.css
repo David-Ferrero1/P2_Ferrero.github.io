@@ -142,9 +142,6 @@
     .most-popular {
         border-radius: 0;
     }
-    .mpopular-title {
-        padding: 0 18px;
-    }
     .mpopular-cards {
         flex-direction: column;
     }
