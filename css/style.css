@@ -38,7 +38,7 @@ header {
 }
 #logo-header {
     width: 130px;
-    margin: 20px 30px;
+    margin: 20px 18px;
  }
 nav {     
     display: flex;
@@ -58,16 +58,16 @@ nav li {
 nav a {
     text-decoration: none;
     color: black;
+    font-weight: 500;
 }
 
 
 /* ================================================ */
 /* Main */
 /* ================================================ */
-main, footer {
-    margin: 0 5px;
+header, .section-search, .section-housing  {
+    padding: 0 40px;
 }
-
 /* ================================================ */
 /* Main form search */
 /* ================================================ */
@@ -81,7 +81,7 @@ main, footer {
     justify-content: space-between;
     margin: 15px 0;
     height: 50px;
-    width: 450px;
+    width: 472px;
     border: 1px solid #F2F2F2;
     border-radius: 10px;
     overflow: hidden;
@@ -102,6 +102,7 @@ main form input {
     font-size: 20px;
     border: none;
     margin: 0 10px;
+    font-weight: bold;
 }
 .main-town {
     margin: auto 0 auto 15px;
@@ -166,7 +167,7 @@ position: relative;
 justify-content: center;
 align-items: baseline;
 margin: 0 20px;
-border: 2px solid lightgray;
+border: 2px solid #F2F2F2;
 border-radius: 40px;
 }
 .logo-filtre {
@@ -201,6 +202,9 @@ border-radius: 40px;
     display: flex;    
     justify-content: space-between;
     margin-bottom: 50px;
+}
+#housing h1 {
+    margin-left: 15px;
 }
 .housing-marseille {
     background-color: #F2F2F2;
@@ -279,6 +283,7 @@ border-radius: 40px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    margin: 0 15px;
 }
 .mpopular-title i {
     font-size: 20px;
@@ -321,9 +326,13 @@ border-radius: 40px;
     display: flex;
     flex-direction: column;
 }
+.activity-section h1 {
+    margin-left: 40px;
+}
 .activity-cards {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 18px;
 }
 .activity-card {
     border-radius: 20px;
@@ -387,7 +396,7 @@ figcaption {
 footer {
     display: flex;
     background-color: #F2F2F2;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 .footer {
     margin: 40px;
@@ -414,12 +423,15 @@ footer a {
 /* media queries */
 /* ================================================ */
 @media (hover: hover) {
+    .main-form-logo, .main-research, .main-research--form, .form-filtre, #logo-header, .housing-card, .mpopular-card, figure {
+        cursor: pointer;
+    }
     nav li:hover {
         color: #0065FC;
         border-top:  3px solid blue;
     }
-    .main-form-logo, .main-research, .main-research--form, .form-filtre, #logo-header, .housing-card, .mpopular-card, figure, li {
-        cursor: pointer;
+    nav a:hover {
+        color: #0065FC;
     }
     .form-filtre:hover {
         background-color: #0065FC;
