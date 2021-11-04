@@ -81,9 +81,9 @@ header, .section-search, .section-housing  {
     justify-content: space-between;
     margin: 15px 0;
     height: 50px;
-    width: 472px;
+    width: 420px;
     border: 1px solid #F2F2F2;
-    border-radius: 10px;
+    border-radius: 15px;
     overflow: hidden;
 }
 .main-search {
@@ -101,16 +101,18 @@ header, .section-search, .section-housing  {
 main form input {
     font-size: 20px;
     border: none;
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    padding-left: 10px;
     font-weight: bold;
+    width: 100%;
 }
 .main-town {
     margin: auto 0 auto 15px;
 }
 .main-research {
-    overflow: hidden;
-    display: flex;
-    position: relative;
+    /* overflow: hidden; */
+    /* display: flex; */
+    /* position: relative; */
     cursor: pointer;
 }
 .main-research--form {
@@ -224,6 +226,7 @@ transition-timing-function: ease-in-out;
 .housing-cards {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .housing-card {
     background-color: #fff;
@@ -386,10 +389,16 @@ figcaption {
     margin: 15px 10px;
 }
 .pomegues {
-    height: 250px;
+    height: 230px;
+}
+.pomegues .card-mediumcard {
+    height: 80%;
 }
 .frioul {
-    height: 150px;
+    height: 170px;
+}
+.frioul .card-mediumcard {
+    height: 70%;
 }
 
 /* ================================================ */
@@ -400,7 +409,7 @@ footer {
     background-color: #F2F2F2;
     margin-top: 40px;
 }
-.footer {
+.footer-item{
     margin: 40px;
     display: flex;
     flex-direction: column;
