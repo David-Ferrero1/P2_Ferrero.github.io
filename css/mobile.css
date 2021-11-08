@@ -138,6 +138,24 @@
     .button-filtre {
         justify-content: start;
     }
+    .form-filtre {
+        margin: 7px 11px;
+    }
+    .logo-filtre {
+        left: -14px;
+        top: -2px;
+        padding: 14px;
+    }
+    .fa-money-bill-wave {
+        padding: 14px 12px;
+    }
+    .p-filtre {
+        margin: 12px 0;
+        padding: 0 13px 0 35px;
+    }
+    .fa-child {
+        padding: 14px 16px;
+    }
     /* *********************************** */
     .most-popular {
         border-radius: 0;
