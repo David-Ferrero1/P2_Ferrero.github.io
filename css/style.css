@@ -101,7 +101,6 @@ header, .section-search, .section-housing  {
 main form input {
     font-size: 20px;
     border: none;
-    /* margin: 0 10px; */
     padding-left: 10px;
     font-weight: bold;
     width: 100%;
@@ -110,9 +109,6 @@ main form input {
     margin: auto 0 auto 15px;
 }
 .main-research {
-    /* overflow: hidden; */
-    /* display: flex; */
-    /* position: relative; */
     cursor: pointer;
 }
 .main-research--form {
